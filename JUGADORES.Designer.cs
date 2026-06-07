@@ -58,7 +58,7 @@
             // 
             this.BtnEliminarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarJu.BackgroundImage")));
             this.BtnEliminarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEliminarJu.Location = new System.Drawing.Point(530, 106);
+            this.BtnEliminarJu.Location = new System.Drawing.Point(546, 103);
             this.BtnEliminarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEliminarJu.Name = "BtnEliminarJu";
             this.BtnEliminarJu.Size = new System.Drawing.Size(140, 42);
