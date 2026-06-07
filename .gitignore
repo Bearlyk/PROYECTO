@@ -1,0 +1,60 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Visual Studio files
+.vs/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+
+# Test results and coverage
+TestResults/
+coverage/
+coverage.opencover.xml
+coverage.cobertura.xml
+*.coverage
+*.coveragexml
+
+# Logs
+*.log
+
+# Windows and temporary files
+Thumbs.db
+Desktop.ini
+*.tmp
+*.temp
+~$*
+
+# Publish output
+publish/
+*.publishsettings
+
+# Application generated data
+datosJugador.txt
