@@ -18,131 +18,183 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JUGADORES));
-            TxtNom = new System.Windows.Forms.TextBox();
-            BtnRegistrarJu = new System.Windows.Forms.Button();
-            BtnEliminarJu = new System.Windows.Forms.Button();
-            BtnBuscarJu = new System.Windows.Forms.Button();
-            BtnVolverJu = new System.Windows.Forms.Button();
-            TxtApo = new System.Windows.Forms.TextBox();
-            LblNombre = new System.Windows.Forms.Label();
-            LblApodo = new System.Windows.Forms.Label();
-            DgvJugadores = new System.Windows.Forms.DataGridView();
-            ColJugadorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColJugadorNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColJugadorApodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColJugadorPuntos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            SuspendLayout();
-            TxtNom.Font = new System.Drawing.Font("OCR A Extended", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            TxtNom.Location = new System.Drawing.Point(71, 33);
-            TxtNom.Name = "TxtNom";
-            TxtNom.Size = new System.Drawing.Size(204, 45);
-            TxtNom.TabIndex = 0;
-            BtnRegistrarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnRegistrarJu.BackgroundImage")));
-            BtnRegistrarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            BtnRegistrarJu.Location = new System.Drawing.Point(707, 26);
-            BtnRegistrarJu.Name = "BtnRegistrarJu";
-            BtnRegistrarJu.Size = new System.Drawing.Size(186, 52);
-            BtnRegistrarJu.TabIndex = 1;
-            BtnRegistrarJu.UseVisualStyleBackColor = true;
-            BtnEliminarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarJu.BackgroundImage")));
-            BtnEliminarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            BtnEliminarJu.Location = new System.Drawing.Point(707, 131);
-            BtnEliminarJu.Name = "BtnEliminarJu";
-            BtnEliminarJu.Size = new System.Drawing.Size(186, 52);
-            BtnEliminarJu.TabIndex = 2;
-            BtnEliminarJu.UseVisualStyleBackColor = true;
-            BtnBuscarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBuscarJu.BackgroundImage")));
-            BtnBuscarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            BtnBuscarJu.Location = new System.Drawing.Point(707, 233);
-            BtnBuscarJu.Name = "BtnBuscarJu";
-            BtnBuscarJu.Size = new System.Drawing.Size(186, 52);
-            BtnBuscarJu.TabIndex = 3;
-            BtnBuscarJu.UseVisualStyleBackColor = true;
-            BtnVolverJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnVolverJu.BackgroundImage")));
-            BtnVolverJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            BtnVolverJu.Location = new System.Drawing.Point(761, 457);
-            BtnVolverJu.Name = "BtnVolverJu";
-            BtnVolverJu.Size = new System.Drawing.Size(186, 52);
-            BtnVolverJu.TabIndex = 4;
-            BtnVolverJu.UseVisualStyleBackColor = true;
-            BtnVolverJu.Click += new System.EventHandler(BtnVolverJu_Click);
-            TxtApo.Font = new System.Drawing.Font("OCR A Extended", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            TxtApo.Location = new System.Drawing.Point(391, 33);
-            TxtApo.Name = "TxtApo";
-            TxtApo.Size = new System.Drawing.Size(204, 45);
-            TxtApo.TabIndex = 5;
-            LblNombre.AutoSize = true;
-            LblNombre.BackColor = System.Drawing.Color.Transparent;
-            LblNombre.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LblNombre.ForeColor = System.Drawing.Color.White;
-            LblNombre.Location = new System.Drawing.Point(61, 99);
-            LblNombre.Name = "LblNombre";
-            LblNombre.Size = new System.Drawing.Size(235, 56);
-            LblNombre.TabIndex = 6;
-            LblNombre.Text = "NOMBRE";
-            LblApodo.AutoSize = true;
-            LblApodo.BackColor = System.Drawing.Color.Transparent;
-            LblApodo.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LblApodo.ForeColor = System.Drawing.Color.White;
-            LblApodo.Location = new System.Drawing.Point(381, 99);
-            LblApodo.Name = "LblApodo";
-            LblApodo.Size = new System.Drawing.Size(200, 56);
-            LblApodo.TabIndex = 7;
-            LblApodo.Text = "APODO";
-            DgvJugadores.AllowUserToAddRows = false;
-            DgvJugadores.AllowUserToDeleteRows = false;
-            DgvJugadores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            DgvJugadores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            DgvJugadores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            DgvJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvJugadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            ColJugadorId,
-            ColJugadorNombre,
-            ColJugadorApodo,
-            ColJugadorPuntos});
-            DgvJugadores.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            DgvJugadores.ForeColor = System.Drawing.Color.Black;
-            DgvJugadores.Location = new System.Drawing.Point(71, 180);
-            DgvJugadores.MultiSelect = false;
-            DgvJugadores.Name = "DgvJugadores";
-            DgvJugadores.ReadOnly = true;
-            DgvJugadores.RowHeadersVisible = false;
-            DgvJugadores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            DgvJugadores.Size = new System.Drawing.Size(600, 288);
-            DgvJugadores.TabIndex = 8;
-            ColJugadorId.HeaderText = "ID";
-            ColJugadorId.Name = "ColJugadorId";
-            ColJugadorId.ReadOnly = true;
-            ColJugadorNombre.HeaderText = "Nombre";
-            ColJugadorNombre.Name = "ColJugadorNombre";
-            ColJugadorNombre.ReadOnly = true;
-            ColJugadorApodo.HeaderText = "Apodo";
-            ColJugadorApodo.Name = "ColJugadorApodo";
-            ColJugadorApodo.ReadOnly = true;
-            ColJugadorPuntos.HeaderText = "Puntos";
-            ColJugadorPuntos.Name = "ColJugadorPuntos";
-            ColJugadorPuntos.ReadOnly = true;
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(976, 546);
-            Controls.Add(DgvJugadores);
-            Controls.Add(LblApodo);
-            Controls.Add(LblNombre);
-            Controls.Add(TxtApo);
-            Controls.Add(BtnVolverJu);
-            Controls.Add(BtnBuscarJu);
-            Controls.Add(BtnEliminarJu);
-            Controls.Add(BtnRegistrarJu);
-            Controls.Add(TxtNom);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Name = "JUGADORES";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "JUGADORES";
-            Load += new System.EventHandler(JUGADORES_Load);
-            ResumeLayout(false);
-            PerformLayout();
+            this.TxtNom = new System.Windows.Forms.TextBox();
+            this.BtnRegistrarJu = new System.Windows.Forms.Button();
+            this.BtnEliminarJu = new System.Windows.Forms.Button();
+            this.BtnBuscarJu = new System.Windows.Forms.Button();
+            this.BtnVolverJu = new System.Windows.Forms.Button();
+            this.TxtApo = new System.Windows.Forms.TextBox();
+            this.LblNombre = new System.Windows.Forms.Label();
+            this.LblApodo = new System.Windows.Forms.Label();
+            this.DgvJugadores = new System.Windows.Forms.DataGridView();
+            this.ColJugadorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColJugadorNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColJugadorApodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColJugadorPuntos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvJugadores)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // TxtNom
+            // 
+            this.TxtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNom.Location = new System.Drawing.Point(53, 27);
+            this.TxtNom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNom.Name = "TxtNom";
+            this.TxtNom.Size = new System.Drawing.Size(154, 28);
+            this.TxtNom.TabIndex = 0;
+            // 
+            // BtnRegistrarJu
+            // 
+            this.BtnRegistrarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnRegistrarJu.BackgroundImage")));
+            this.BtnRegistrarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnRegistrarJu.Location = new System.Drawing.Point(530, 21);
+            this.BtnRegistrarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnRegistrarJu.Name = "BtnRegistrarJu";
+            this.BtnRegistrarJu.Size = new System.Drawing.Size(140, 42);
+            this.BtnRegistrarJu.TabIndex = 1;
+            this.BtnRegistrarJu.UseVisualStyleBackColor = true;
+            // 
+            // BtnEliminarJu
+            // 
+            this.BtnEliminarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarJu.BackgroundImage")));
+            this.BtnEliminarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnEliminarJu.Location = new System.Drawing.Point(530, 106);
+            this.BtnEliminarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnEliminarJu.Name = "BtnEliminarJu";
+            this.BtnEliminarJu.Size = new System.Drawing.Size(140, 42);
+            this.BtnEliminarJu.TabIndex = 2;
+            this.BtnEliminarJu.UseVisualStyleBackColor = true;
+            // 
+            // BtnBuscarJu
+            // 
+            this.BtnBuscarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBuscarJu.BackgroundImage")));
+            this.BtnBuscarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBuscarJu.Location = new System.Drawing.Point(530, 203);
+            this.BtnBuscarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBuscarJu.Name = "BtnBuscarJu";
+            this.BtnBuscarJu.Size = new System.Drawing.Size(140, 42);
+            this.BtnBuscarJu.TabIndex = 3;
+            this.BtnBuscarJu.UseVisualStyleBackColor = true;
+            // 
+            // BtnVolverJu
+            // 
+            this.BtnVolverJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnVolverJu.BackgroundImage")));
+            this.BtnVolverJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnVolverJu.Location = new System.Drawing.Point(571, 371);
+            this.BtnVolverJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnVolverJu.Name = "BtnVolverJu";
+            this.BtnVolverJu.Size = new System.Drawing.Size(140, 42);
+            this.BtnVolverJu.TabIndex = 4;
+            this.BtnVolverJu.UseVisualStyleBackColor = true;
+            this.BtnVolverJu.Click += new System.EventHandler(this.BtnVolverJu_Click);
+            // 
+            // TxtApo
+            // 
+            this.TxtApo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtApo.Location = new System.Drawing.Point(293, 27);
+            this.TxtApo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtApo.Name = "TxtApo";
+            this.TxtApo.Size = new System.Drawing.Size(154, 28);
+            this.TxtApo.TabIndex = 5;
+            // 
+            // LblNombre
+            // 
+            this.LblNombre.AutoSize = true;
+            this.LblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.LblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombre.ForeColor = System.Drawing.Color.White;
+            this.LblNombre.Location = new System.Drawing.Point(46, 80);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(156, 37);
+            this.LblNombre.TabIndex = 6;
+            this.LblNombre.Text = "NOMBRE";
+            // 
+            // LblApodo
+            // 
+            this.LblApodo.AutoSize = true;
+            this.LblApodo.BackColor = System.Drawing.Color.Transparent;
+            this.LblApodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblApodo.ForeColor = System.Drawing.Color.White;
+            this.LblApodo.Location = new System.Drawing.Point(286, 80);
+            this.LblApodo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblApodo.Name = "LblApodo";
+            this.LblApodo.Size = new System.Drawing.Size(133, 37);
+            this.LblApodo.TabIndex = 7;
+            this.LblApodo.Text = "APODO";
+            // 
+            // DgvJugadores
+            // 
+            this.DgvJugadores.AllowUserToAddRows = false;
+            this.DgvJugadores.AllowUserToDeleteRows = false;
+            this.DgvJugadores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvJugadores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.DgvJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvJugadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColJugadorId,
+            this.ColJugadorNombre,
+            this.ColJugadorApodo,
+            this.ColJugadorPuntos});
+            this.DgvJugadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DgvJugadores.Location = new System.Drawing.Point(53, 146);
+            this.DgvJugadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DgvJugadores.MultiSelect = false;
+            this.DgvJugadores.Name = "DgvJugadores";
+            this.DgvJugadores.ReadOnly = true;
+            this.DgvJugadores.RowHeadersVisible = false;
+            this.DgvJugadores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvJugadores.Size = new System.Drawing.Size(450, 234);
+            this.DgvJugadores.TabIndex = 8;
+            // 
+            // ColJugadorId
+            // 
+            this.ColJugadorId.HeaderText = "ID";
+            this.ColJugadorId.Name = "ColJugadorId";
+            this.ColJugadorId.ReadOnly = true;
+            // 
+            // ColJugadorNombre
+            // 
+            this.ColJugadorNombre.HeaderText = "Nombre";
+            this.ColJugadorNombre.Name = "ColJugadorNombre";
+            this.ColJugadorNombre.ReadOnly = true;
+            // 
+            // ColJugadorApodo
+            // 
+            this.ColJugadorApodo.HeaderText = "Apodo";
+            this.ColJugadorApodo.Name = "ColJugadorApodo";
+            this.ColJugadorApodo.ReadOnly = true;
+            // 
+            // ColJugadorPuntos
+            // 
+            this.ColJugadorPuntos.HeaderText = "Puntos";
+            this.ColJugadorPuntos.Name = "ColJugadorPuntos";
+            this.ColJugadorPuntos.ReadOnly = true;
+            // 
+            // JUGADORES
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(732, 444);
+            this.Controls.Add(this.DgvJugadores);
+            this.Controls.Add(this.LblApodo);
+            this.Controls.Add(this.LblNombre);
+            this.Controls.Add(this.TxtApo);
+            this.Controls.Add(this.BtnVolverJu);
+            this.Controls.Add(this.BtnBuscarJu);
+            this.Controls.Add(this.BtnEliminarJu);
+            this.Controls.Add(this.BtnRegistrarJu);
+            this.Controls.Add(this.TxtNom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "JUGADORES";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "JUGADORES";
+            this.Load += new System.EventHandler(this.JUGADORES_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvJugadores)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
