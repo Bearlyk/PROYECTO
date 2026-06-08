@@ -18,6 +18,7 @@ namespace MENU_DE_TORNEOS_1._0
 
         private void BtnVolver_Click(object sender, EventArgs e)
         {
+            //aqui estamos abriendo el menu principal
             MENU menu = new MENU();
             menu.Show();
             Hide();
