@@ -38,7 +38,7 @@
             // 
             this.TxtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNom.Location = new System.Drawing.Point(53, 27);
-            this.TxtNom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNom.Margin = new System.Windows.Forms.Padding(2);
             this.TxtNom.Name = "TxtNom";
             this.TxtNom.Size = new System.Drawing.Size(154, 28);
             this.TxtNom.TabIndex = 0;
@@ -48,7 +48,7 @@
             this.BtnRegistrarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnRegistrarJu.BackgroundImage")));
             this.BtnRegistrarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnRegistrarJu.Location = new System.Drawing.Point(530, 21);
-            this.BtnRegistrarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnRegistrarJu.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRegistrarJu.Name = "BtnRegistrarJu";
             this.BtnRegistrarJu.Size = new System.Drawing.Size(140, 42);
             this.BtnRegistrarJu.TabIndex = 1;
@@ -59,18 +59,19 @@
             this.BtnEliminarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarJu.BackgroundImage")));
             this.BtnEliminarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnEliminarJu.Location = new System.Drawing.Point(546, 103);
-            this.BtnEliminarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnEliminarJu.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEliminarJu.Name = "BtnEliminarJu";
             this.BtnEliminarJu.Size = new System.Drawing.Size(140, 42);
             this.BtnEliminarJu.TabIndex = 2;
             this.BtnEliminarJu.UseVisualStyleBackColor = true;
+            this.BtnEliminarJu.Click += new System.EventHandler(this.BtnEliminarJu_Click_1);
             // 
             // BtnBuscarJu
             // 
             this.BtnBuscarJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBuscarJu.BackgroundImage")));
             this.BtnBuscarJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBuscarJu.Location = new System.Drawing.Point(530, 203);
-            this.BtnBuscarJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBuscarJu.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBuscarJu.Name = "BtnBuscarJu";
             this.BtnBuscarJu.Size = new System.Drawing.Size(140, 42);
             this.BtnBuscarJu.TabIndex = 3;
@@ -81,7 +82,7 @@
             this.BtnVolverJu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnVolverJu.BackgroundImage")));
             this.BtnVolverJu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnVolverJu.Location = new System.Drawing.Point(571, 371);
-            this.BtnVolverJu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnVolverJu.Margin = new System.Windows.Forms.Padding(2);
             this.BtnVolverJu.Name = "BtnVolverJu";
             this.BtnVolverJu.Size = new System.Drawing.Size(140, 42);
             this.BtnVolverJu.TabIndex = 4;
@@ -92,7 +93,7 @@
             // 
             this.TxtApo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApo.Location = new System.Drawing.Point(293, 27);
-            this.TxtApo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtApo.Margin = new System.Windows.Forms.Padding(2);
             this.TxtApo.Name = "TxtApo";
             this.TxtApo.Size = new System.Drawing.Size(154, 28);
             this.TxtApo.TabIndex = 5;
@@ -137,7 +138,7 @@
             this.ColJugadorPuntos});
             this.DgvJugadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DgvJugadores.Location = new System.Drawing.Point(53, 146);
-            this.DgvJugadores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DgvJugadores.Margin = new System.Windows.Forms.Padding(2);
             this.DgvJugadores.MultiSelect = false;
             this.DgvJugadores.Name = "DgvJugadores";
             this.DgvJugadores.ReadOnly = true;
@@ -187,7 +188,7 @@
             this.Controls.Add(this.BtnRegistrarJu);
             this.Controls.Add(this.TxtNom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "JUGADORES";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JUGADORES";

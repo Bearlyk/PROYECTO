@@ -201,6 +201,11 @@ namespace MENU_DE_TORNEOS_1._0
             TxtApo.Text = "";
             TxtNom.Focus();
         }
+
+        private void BtnEliminarJu_Click_1(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 
