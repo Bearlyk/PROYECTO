@@ -15,154 +15,214 @@
 
         private void InitializeComponent()
         {
-            LblTitulo = new System.Windows.Forms.Label();
-            LblNombre = new System.Windows.Forms.Label();
-            LblTipo = new System.Windows.Forms.Label();
-            TxtNombre = new System.Windows.Forms.TextBox();
-            CmbTipo = new System.Windows.Forms.ComboBox();
-            BtnCrear = new System.Windows.Forms.Button();
-            BtnSeleccionar = new System.Windows.Forms.Button();
-            BtnVolver = new System.Windows.Forms.Button();
-            DgvTorneos = new System.Windows.Forms.DataGridView();
-            ColTorneoMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColTorneoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColTorneoNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColTorneoTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColTorneoFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ColTorneoEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            SuspendLayout();
-            LblTitulo.BackColor = System.Drawing.Color.Transparent;
-            LblTitulo.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LblTitulo.ForeColor = System.Drawing.Color.White;
-            LblTitulo.Location = new System.Drawing.Point(60, 25);
-            LblTitulo.Name = "LblTitulo";
-            LblTitulo.Size = new System.Drawing.Size(400, 45);
-            LblTitulo.TabIndex = 0;
-            LblTitulo.Text = "TORNEOS";
-            LblNombre.BackColor = System.Drawing.Color.Transparent;
-            LblNombre.Font = new System.Drawing.Font("OCR A Extended", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LblNombre.ForeColor = System.Drawing.Color.White;
-            LblNombre.Location = new System.Drawing.Point(60, 95);
-            LblNombre.Name = "LblNombre";
-            LblNombre.Size = new System.Drawing.Size(200, 30);
-            LblNombre.TabIndex = 1;
-            LblNombre.Text = "NOMBRE";
-            LblTipo.BackColor = System.Drawing.Color.Transparent;
-            LblTipo.Font = new System.Drawing.Font("OCR A Extended", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LblTipo.ForeColor = System.Drawing.Color.White;
-            LblTipo.Location = new System.Drawing.Point(390, 95);
-            LblTipo.Name = "LblTipo";
-            LblTipo.Size = new System.Drawing.Size(200, 30);
-            LblTipo.TabIndex = 2;
-            LblTipo.Text = "TIPO";
-            TxtNombre.Font = new System.Drawing.Font("OCR A Extended", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            TxtNombre.Location = new System.Drawing.Point(60, 130);
-            TxtNombre.Name = "TxtNombre";
-            TxtNombre.Size = new System.Drawing.Size(280, 29);
-            TxtNombre.TabIndex = 3;
-            CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            CmbTipo.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            CmbTipo.FormattingEnabled = true;
-            CmbTipo.Items.AddRange(new object[] {
+            this.LblTitulo = new System.Windows.Forms.Label();
+            this.LblNombre = new System.Windows.Forms.Label();
+            this.LblTipo = new System.Windows.Forms.Label();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.CmbTipo = new System.Windows.Forms.ComboBox();
+            this.BtnCrear = new System.Windows.Forms.Button();
+            this.BtnSeleccionar = new System.Windows.Forms.Button();
+            this.BtnVolver = new System.Windows.Forms.Button();
+            this.DgvTorneos = new System.Windows.Forms.DataGridView();
+            this.ColTorneoMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTorneoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTorneoNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTorneoTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTorneoFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTorneoEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvTorneos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // LblTitulo
+            // 
+            this.LblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.LblTitulo.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitulo.ForeColor = System.Drawing.Color.White;
+            this.LblTitulo.Location = new System.Drawing.Point(45, 20);
+            this.LblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblTitulo.Name = "LblTitulo";
+            this.LblTitulo.Size = new System.Drawing.Size(300, 37);
+            this.LblTitulo.TabIndex = 0;
+            this.LblTitulo.Text = "TORNEOS";
+            // 
+            // LblNombre
+            // 
+            this.LblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.LblNombre.Font = new System.Drawing.Font("OCR A Extended", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombre.ForeColor = System.Drawing.Color.White;
+            this.LblNombre.Location = new System.Drawing.Point(45, 77);
+            this.LblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNombre.Name = "LblNombre";
+            this.LblNombre.Size = new System.Drawing.Size(150, 24);
+            this.LblNombre.TabIndex = 1;
+            this.LblNombre.Text = "NOMBRE";
+            // 
+            // LblTipo
+            // 
+            this.LblTipo.BackColor = System.Drawing.Color.Transparent;
+            this.LblTipo.Font = new System.Drawing.Font("OCR A Extended", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTipo.ForeColor = System.Drawing.Color.White;
+            this.LblTipo.Location = new System.Drawing.Point(292, 77);
+            this.LblTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblTipo.Name = "LblTipo";
+            this.LblTipo.Size = new System.Drawing.Size(150, 24);
+            this.LblTipo.TabIndex = 2;
+            this.LblTipo.Text = "TIPO";
+            // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Font = new System.Drawing.Font("OCR A Extended", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombre.Location = new System.Drawing.Point(45, 106);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(211, 23);
+            this.TxtNombre.TabIndex = 3;
+            // 
+            // CmbTipo
+            // 
+            this.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbTipo.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.Items.AddRange(new object[] {
             "LIGA",
             "TODOS_CONTRA_TODOS",
             "ELIMINACION"});
-            CmbTipo.Location = new System.Drawing.Point(390, 130);
-            CmbTipo.Name = "CmbTipo";
-            CmbTipo.Size = new System.Drawing.Size(250, 28);
-            CmbTipo.TabIndex = 4;
-            BtnCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
-            BtnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnCrear.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnCrear.ForeColor = System.Drawing.Color.White;
-            BtnCrear.Location = new System.Drawing.Point(690, 126);
-            BtnCrear.Name = "BtnCrear";
-            BtnCrear.Size = new System.Drawing.Size(150, 40);
-            BtnCrear.TabIndex = 5;
-            BtnCrear.Text = "CREAR";
-            BtnCrear.UseVisualStyleBackColor = false;
-            BtnCrear.Click += new System.EventHandler(BtnCrear_Click);
-            BtnSeleccionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
-            BtnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnSeleccionar.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnSeleccionar.ForeColor = System.Drawing.Color.White;
-            BtnSeleccionar.Location = new System.Drawing.Point(60, 475);
-            BtnSeleccionar.Name = "BtnSeleccionar";
-            BtnSeleccionar.Size = new System.Drawing.Size(150, 40);
-            BtnSeleccionar.TabIndex = 6;
-            BtnSeleccionar.Text = "SELECCIONAR";
-            BtnSeleccionar.UseVisualStyleBackColor = false;
-            BtnSeleccionar.Click += new System.EventHandler(BtnSeleccionar_Click);
-            BtnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
-            BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnVolver.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BtnVolver.ForeColor = System.Drawing.Color.White;
-            BtnVolver.Location = new System.Drawing.Point(760, 475);
-            BtnVolver.Name = "BtnVolver";
-            BtnVolver.Size = new System.Drawing.Size(150, 40);
-            BtnVolver.TabIndex = 7;
-            BtnVolver.Text = "VOLVER";
-            BtnVolver.UseVisualStyleBackColor = false;
-            BtnVolver.Click += new System.EventHandler(BtnVolver_Click);
-            DgvTorneos.AllowUserToAddRows = false;
-            DgvTorneos.AllowUserToDeleteRows = false;
-            DgvTorneos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            DgvTorneos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            DgvTorneos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvTorneos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            ColTorneoMarca,
-            ColTorneoId,
-            ColTorneoNombre,
-            ColTorneoTipo,
-            ColTorneoFecha,
-            ColTorneoEstado});
-            DgvTorneos.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            DgvTorneos.ForeColor = System.Drawing.Color.Black;
-            DgvTorneos.Location = new System.Drawing.Point(60, 190);
-            DgvTorneos.MultiSelect = false;
-            DgvTorneos.Name = "DgvTorneos";
-            DgvTorneos.ReadOnly = true;
-            DgvTorneos.RowHeadersVisible = false;
-            DgvTorneos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            DgvTorneos.Size = new System.Drawing.Size(830, 264);
-            DgvTorneos.TabIndex = 8;
-            ColTorneoMarca.HeaderText = "";
-            ColTorneoMarca.Name = "ColTorneoMarca";
-            ColTorneoMarca.ReadOnly = true;
-            ColTorneoId.HeaderText = "ID";
-            ColTorneoId.Name = "ColTorneoId";
-            ColTorneoId.ReadOnly = true;
-            ColTorneoNombre.HeaderText = "Nombre";
-            ColTorneoNombre.Name = "ColTorneoNombre";
-            ColTorneoNombre.ReadOnly = true;
-            ColTorneoTipo.HeaderText = "Tipo";
-            ColTorneoTipo.Name = "ColTorneoTipo";
-            ColTorneoTipo.ReadOnly = true;
-            ColTorneoFecha.HeaderText = "Fecha";
-            ColTorneoFecha.Name = "ColTorneoFecha";
-            ColTorneoFecha.ReadOnly = true;
-            ColTorneoEstado.HeaderText = "Estado";
-            ColTorneoEstado.Name = "ColTorneoEstado";
-            ColTorneoEstado.ReadOnly = true;
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(18)))));
-            ClientSize = new System.Drawing.Size(976, 546);
-            Controls.Add(DgvTorneos);
-            Controls.Add(BtnVolver);
-            Controls.Add(BtnSeleccionar);
-            Controls.Add(BtnCrear);
-            Controls.Add(CmbTipo);
-            Controls.Add(TxtNombre);
-            Controls.Add(LblTipo);
-            Controls.Add(LblNombre);
-            Controls.Add(LblTitulo);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Name = "TORNEOS";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "TORNEOS";
-            ResumeLayout(false);
-            PerformLayout();
+            this.CmbTipo.Location = new System.Drawing.Point(292, 106);
+            this.CmbTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbTipo.Name = "CmbTipo";
+            this.CmbTipo.Size = new System.Drawing.Size(188, 21);
+            this.CmbTipo.TabIndex = 4;
+            // 
+            // BtnCrear
+            // 
+            this.BtnCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            this.BtnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCrear.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCrear.ForeColor = System.Drawing.Color.White;
+            this.BtnCrear.Location = new System.Drawing.Point(518, 102);
+            this.BtnCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnCrear.Name = "BtnCrear";
+            this.BtnCrear.Size = new System.Drawing.Size(112, 32);
+            this.BtnCrear.TabIndex = 5;
+            this.BtnCrear.Text = "CREAR";
+            this.BtnCrear.UseVisualStyleBackColor = false;
+            this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
+            // 
+            // BtnSeleccionar
+            // 
+            this.BtnSeleccionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            this.BtnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSeleccionar.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSeleccionar.ForeColor = System.Drawing.Color.White;
+            this.BtnSeleccionar.Location = new System.Drawing.Point(83, 386);
+            this.BtnSeleccionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnSeleccionar.Name = "BtnSeleccionar";
+            this.BtnSeleccionar.Size = new System.Drawing.Size(112, 32);
+            this.BtnSeleccionar.TabIndex = 6;
+            this.BtnSeleccionar.Text = "SELECCIONAR";
+            this.BtnSeleccionar.UseVisualStyleBackColor = false;
+            this.BtnSeleccionar.Click += new System.EventHandler(this.BtnSeleccionar_Click);
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolver.Font = new System.Drawing.Font("OCR A Extended", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.Color.White;
+            this.BtnVolver.Location = new System.Drawing.Point(570, 386);
+            this.BtnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(112, 32);
+            this.BtnVolver.TabIndex = 7;
+            this.BtnVolver.Text = "VOLVER";
+            this.BtnVolver.UseVisualStyleBackColor = false;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
+            // DgvTorneos
+            // 
+            this.DgvTorneos.AllowUserToAddRows = false;
+            this.DgvTorneos.AllowUserToDeleteRows = false;
+            this.DgvTorneos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvTorneos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.DgvTorneos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvTorneos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColTorneoMarca,
+            this.ColTorneoId,
+            this.ColTorneoNombre,
+            this.ColTorneoTipo,
+            this.ColTorneoFecha,
+            this.ColTorneoEstado});
+            this.DgvTorneos.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DgvTorneos.Location = new System.Drawing.Point(45, 154);
+            this.DgvTorneos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DgvTorneos.MultiSelect = false;
+            this.DgvTorneos.Name = "DgvTorneos";
+            this.DgvTorneos.ReadOnly = true;
+            this.DgvTorneos.RowHeadersVisible = false;
+            this.DgvTorneos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvTorneos.Size = new System.Drawing.Size(622, 214);
+            this.DgvTorneos.TabIndex = 8;
+            // 
+            // ColTorneoMarca
+            // 
+            this.ColTorneoMarca.HeaderText = "";
+            this.ColTorneoMarca.Name = "ColTorneoMarca";
+            this.ColTorneoMarca.ReadOnly = true;
+            // 
+            // ColTorneoId
+            // 
+            this.ColTorneoId.HeaderText = "ID";
+            this.ColTorneoId.Name = "ColTorneoId";
+            this.ColTorneoId.ReadOnly = true;
+            // 
+            // ColTorneoNombre
+            // 
+            this.ColTorneoNombre.HeaderText = "Nombre";
+            this.ColTorneoNombre.Name = "ColTorneoNombre";
+            this.ColTorneoNombre.ReadOnly = true;
+            // 
+            // ColTorneoTipo
+            // 
+            this.ColTorneoTipo.HeaderText = "Tipo";
+            this.ColTorneoTipo.Name = "ColTorneoTipo";
+            this.ColTorneoTipo.ReadOnly = true;
+            // 
+            // ColTorneoFecha
+            // 
+            this.ColTorneoFecha.HeaderText = "Fecha";
+            this.ColTorneoFecha.Name = "ColTorneoFecha";
+            this.ColTorneoFecha.ReadOnly = true;
+            // 
+            // ColTorneoEstado
+            // 
+            this.ColTorneoEstado.HeaderText = "Estado";
+            this.ColTorneoEstado.Name = "ColTorneoEstado";
+            this.ColTorneoEstado.ReadOnly = true;
+            // 
+            // TORNEOS
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(18)))));
+            this.ClientSize = new System.Drawing.Size(732, 444);
+            this.Controls.Add(this.DgvTorneos);
+            this.Controls.Add(this.BtnVolver);
+            this.Controls.Add(this.BtnSeleccionar);
+            this.Controls.Add(this.BtnCrear);
+            this.Controls.Add(this.CmbTipo);
+            this.Controls.Add(this.TxtNombre);
+            this.Controls.Add(this.LblTipo);
+            this.Controls.Add(this.LblNombre);
+            this.Controls.Add(this.LblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "TORNEOS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TORNEOS";
+            ((System.ComponentModel.ISupportInitialize)(this.DgvTorneos)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label LblTitulo;

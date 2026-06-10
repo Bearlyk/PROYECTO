@@ -64,6 +64,7 @@
             this.BtnEliminarJu.Size = new System.Drawing.Size(187, 52);
             this.BtnEliminarJu.TabIndex = 2;
             this.BtnEliminarJu.UseVisualStyleBackColor = true;
+            this.BtnEliminarJu.Click += new System.EventHandler(this.BtnEliminarJu_Click_1);
             // 
             // BtnBuscarJu
             // 
